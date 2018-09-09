@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context="com.avocode.alikhsan.basketballscoringapp.MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="@string/team_1"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:textColor="@color/colorPurple"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/ed_team_one"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/enter_the_team_name"
+        android:textAllCaps="true"
+        android:inputType="textCapWords"
+        android:maxLength="16" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="16dp"
+            android:text="@string/read_team"
+            android:id="@+id/rb_one_red"
+            android:textAppearance="?android:textAppearanceSmall"
+            android:textColor="@color/colorRed"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/blue_team"
+            android:id="@+id/rb_one_blue"
+            android:textAppearance="?android:textAppearanceSmall"
+            android:textColor="@color/colorHBlue"
+            android:textStyle="bold" />
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="32dp"
+        android:text="@string/team_2"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:textColor="@color/colorPurple"
+        android:textStyle="bold" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/enter_the_team_name"
+        android:inputType="textCapSentences"
+        android:maxLength="16"
+        android:textAllCaps="true"
+        android:id="@+id/ed_team_two"/>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="16dp"
+            android:text="@string/read_team"
+            android:id="@+id/rb_two_red"
+            android:textAppearance="?android:textAppearanceSmall"
+            android:textColor="@color/colorRed"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/blue_team"
+            android:id="@+id/rb_two_blue"
+            android:textAppearance="?android:textAppearanceSmall"
+            android:textColor="@color/colorHBlue"
+            android:textStyle="bold" />
+    </RadioGroup>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="GO!"
+        android:id="@+id/btn_go"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:textColor="@color/colorPurple"
+        android:textStyle="bold" />
+</LinearLayout>

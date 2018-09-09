@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.avocode.alikhsan.basketballscoringapp.ResultActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/iv_crown"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="sans-serif-condensed"
+        android:text="WINNER!"
+        android:textColor="#e4be02"
+        android:textSize="62sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/iv_crown"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_centerInParent="true"
+        android:src="@drawable/crown" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iv_crown"
+        android:layout_margin="8dp"
+        android:id="@+id/ll_winner"
+        android:background="@drawable/custom_layout_winner_blue"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Team A"
+            android:id="@+id/name_team_winner"
+            android:textAllCaps="true"
+            android:textAppearance="?android:textAppearanceLarge"
+            android:textColor="@android:color/white"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_score_team_winner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:maxLength="2"
+        android:text="@string/score"
+        android:textColor="@android:color/black"
+        android:textSize="100dp" />
+
+
+</RelativeLayout>
